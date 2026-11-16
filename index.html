@@ -60,7 +60,6 @@
     display:flex;align-items:center;gap:12px;margin-top:26px;
     font-size:.9rem;color:var(--faint);
   }
-  .axo{font-size:1.35rem;filter:drop-shadow(0 0 8px rgba(45,212,191,.5))}
   .brandline b{color:var(--text);font-weight:600}
 
   /* ---------- Progress ---------- */
@@ -208,7 +207,6 @@
     <h1>Hagamos que conozcan <em>Casa Hidalgo</em></h1>
     <p class="lede">Con esto armamos la primera versión de tu sitio. Toma unos 10 minutos. Contesta lo que puedas: los campos opcionales se pueden quedar en blanco y lo que falte lo platicamos. Al terminar, presiona <b>Enviar a VonoaWeb</b> y nos llega al momento.</p>
     <div class="brandline">
-      <span class="axo">🦎</span>
       <span>Preparado por <b>VonoaWeb</b> para <b>Casa Hidalgo</b> · casahidalgo.art</span>
     </div>
   </div>
@@ -531,7 +529,7 @@
 </div>
 
 <footer class="wrap">
-  <p>🦎 Hecho por <b>VonoaWeb</b> · Diseño y desarrollo web para tu negocio</p>
+  <p>Hecho por <b>VonoaWeb</b> · Diseño y desarrollo web para tu negocio</p>
 </footer>
 
 <div class="toast" id="toast">Copiado ✓</div>
@@ -694,7 +692,7 @@
       const data = await res.json().catch(()=>({}));
       if(!res.ok || !data.success) throw new Error(data.message || ('HTTP '+res.status));
       mostrarResumen(resumen);
-      setMsg('✓ ¡Recibido! Ya nos llegó tu información. Gracias 🦎', 'ok');
+      setMsg('✓ ¡Recibido! Ya nos llegó tu información. Gracias.', 'ok');
       btn.textContent = '✓ Enviado';
       showToast('Enviado ✓');
     }catch(err){
